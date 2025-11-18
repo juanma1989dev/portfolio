@@ -1,0 +1,72 @@
+---
+const { job } = Astro.props;
+const { role, company, period, description, technologies } = job;
+---
+
+<div class="experience-item relative bg-gray-800/50 backdrop-blur-sm border border-white/10 rounded-lg shadow-lg transition-all duration-300">
+    <div class="p-4">
+        <header class="flex items-start justify-between">
+            <div>
+                <h3 class="text-lg font-bold text-white">{role}</h3>
+                <p class="text-blue-400 font-semibold text-md  ">{company}</p>
+                <p class="text-sm text-gray-400 mt-1">{period}</p>
+            </div>
+            <button class="toggle-button text-sm text-blue-400 hover:underline font-semibold flex items-center gap-1 mt-1">
+                <span class="button-text">Ver más</span>
+                <svg class="toggle-icon w-4 h-4 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m6 9 6 6 6-6"/>
+                </svg>
+            </button>
+        </header>
+        
+        <div class="details-content overflow-hidden max-h-0 transition-max-height duration-500 ease-in-out">
+            <div class="pt-4">
+                 <div class="prose prose-invert max-w-none text-gray-300 mb-6">
+                    <ul class="list-disc list-inside space-y-2">
+                        {description.map((item:string) => (
+                            <li>{item}</li>
+                        ))}
+                    </ul>
+                </div>
+
+                <footer class="mt-4 pt-4 border-t border-white/10">
+                    <h4 class="text-md font-semibold text-white mb-3">Tecnologías Clave</h4>
+                    <div class="flex flex-wrap gap-2">
+                        {technologies.map((tech:string) => (
+                            <span class="bg-gray-700/80 border border-white/10 text-gray-300 text-sm font-medium px-3 py-1 rounded-full">
+                                {tech}
+                            </span>
+                        ))}
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Script para manejar la funcionalidad de "Ver más / Ver menos"
+    document.querySelectorAll('.experience-item').forEach(item => {
+        const toggleButton = item.querySelector('.toggle-button') as HTMLElement;
+        const content = item.querySelector('.details-content') as HTMLElement;
+        const buttonText = item.querySelector('.button-text') as HTMLElement;
+        const icon = item.querySelector('.toggle-icon') as HTMLElement;
+
+        if (!toggleButton || !content || !buttonText || !icon) return;
+
+        toggleButton.addEventListener('click', () => {
+            const isExpanded = content.style.maxHeight && content.style.maxHeight !== '0px';
+
+            if (isExpanded) {
+                content.style.maxHeight = '0px';
+                buttonText.textContent = 'Ver más';
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                // scrollHeight da la altura total del contenido, incluso si está oculto
+                content.style.maxHeight = content.scrollHeight + 'px';
+                buttonText.textContent = 'Ver menos';
+                icon.style.transform = 'rotate(180deg)';
+            }
+        });
+    });
+</script>

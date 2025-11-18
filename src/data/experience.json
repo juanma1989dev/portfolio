@@ -1,0 +1,49 @@
+[
+  {
+    "role": "Desarrollador de Software",
+    "company": "Global Hitss",
+    "period": "Enero 2020 - Presente",
+    "description": [
+      "Diseño, desarrollo y mantenimiento de aplicaciones empresariales basadas en arquitecturas de microservicios utilizando PHP y Java.",
+      "Liderazgo técnico en la implementación de soluciones escalables en entornos Red Hat y Oracle, garantizando alta disponibilidad y rendimiento.",
+      "Automatización de procesos de despliegue y configuración mediante herramientas de integración continua (CI/CD).",
+      "Promoción de buenas prácticas de desarrollo, incluyendo control de versiones, revisión de código y pruebas automatizadas.",
+      "Colaboración transversal con equipos de infraestructura y QA para optimizar la entrega continua de software.",
+      "Participación activa en la adopción de tecnologías emergentes y en la formación de equipos en nuevas herramientas."
+    ],
+    "technologies": ["Microservicios", "PHP", "Java", "Red Hat", "Oracle", "Composer", "jQuery"]
+  },
+  {
+    "role": "Desarrollador de Software y Administrador de Servidores",
+    "company": "Tribunal Electoral del Poder Judicial de la Federación",
+    "period": "Febrero 2017 - Enero 2020",
+    "description": [
+      "Desarrollo e integración de sistemas web con Laravel y Angular para la gestión de información electoral.",
+      "Diseño y mantenimiento de bases de datos MySQL optimizadas para alto rendimiento y consultas complejas.",
+      "Implementación de APIs REST seguras para la interoperabilidad entre sistemas internos y externos.",
+      "Administración de servidores en entornos Ubuntu y Docker, asegurando disponibilidad y escalabilidad de los servicios.",
+      "Configuración y mantenimiento de Apache Solr para la indexación y búsqueda avanzada de información.",
+      "Gestión de despliegues y automatización de dependencias mediante Composer y Docker."
+    ],
+    "technologies": [
+      "PHP", "Apache Solr", "Laravel", "JavaScript", "Angular", "MySQL", "jQuery",
+      "API REST", "Bootstrap", "Docker", "Ubuntu", "Composer"
+    ]
+  },
+  {
+    "role": "Líder de Desarrollo de Software",
+    "company": "Cyberideas",
+    "period": "Junio 2016 - Diciembre 2016",
+    "description": [
+      "Dirección técnica del equipo de desarrollo en la creación de aplicaciones web para la gestión interna del call center.",
+      "Diseño y desarrollo de sistemas de seguimiento de acuerdos y resoluciones utilizando PHP, Python y MySQL.",
+      "Definición de estándares de codificación, control de versiones y revisión de código para mejorar la calidad del software.",
+      "Implementación de interfaces dinámicas y responsivas con JavaScript, Bootstrap y jQuery.",
+      "Optimización de consultas SQL y refactorización de componentes críticos para mejorar el rendimiento del sistema.",
+      "Colaboración con equipos multidisciplinarios para garantizar entregas en tiempo y alineadas con los objetivos del negocio."
+    ],
+    "technologies": [
+      "PHP", "JavaScript", "Python", "MySQL", "API", "Bootstrap", "jQuery"
+    ]
+  }
+]

@@ -1,0 +1,114 @@
+[
+  {
+    "slug": "buscador-de-sentencias",
+    "title": "Buscador de Sentencias",
+    "descriptionCorta": "Aplicación web que permite consultar de forma rápida, precisa y accesible las sentencias públicas del Tribunal Electoral.",
+    "imageLink": "/sentencias.png",
+    "link": "https://www.te.gob.mx/buscador",
+    "public": true,
+    "visible": true,
+    "technologies": [
+      "CodeIgniter 3",
+      "PHP",
+      "JavaScript",
+      "Apache Solr",
+      "MySQL",
+      "Bootstrap",
+      "API REST",
+      "Apache",
+      "Git"
+    ],
+    "category": "Aplicación Web",
+    "descripcion": [
+      "Desarrollé el Buscador de Sentencias del Tribunal Electoral, una aplicación web que facilita el acceso a información judicial pública mediante una interfaz intuitiva.",
+      "Integré Apache Solr para implementar búsquedas avanzadas por palabra clave, texto completo y filtros personalizados, mejorando la precisión y velocidad de los resultados.",
+      "Diseñé y optimicé una API REST para conectar la base de datos MySQL con el frontend, garantizando un intercambio de información seguro y eficiente.",
+      "Construí una interfaz responsiva con Bootstrap y JavaScript, asegurando una experiencia fluida tanto en equipos de escritorio como en dispositivos móviles.",
+      "Colaboré con desarrolladores y con el área jurídica para definir criterios de búsqueda, garantizando la precisión y la integridad de la información publicada."
+    ]
+  },  
+  {
+    "slug": "declara-patrimonial",
+    "title": "Declaración patrimonial",
+    "descriptionCorta": "Sistema para generar la declaración patrimonial de los empleadodos del Tribunal Electoral",
+    "imageLink": "/te-logo.webp",
+    "link": null,
+    "public": true,
+    "visible": true,
+    "technologies": [
+      "Laravel",
+      "PHP",
+      "Angular",
+      "JavaScript",
+      "SQL-Server",
+      "API REST",
+      "Git"
+    ],
+    "category": "Aplicación Web",
+    "descripcion": [
+      "El Buscador de Sentencias del Tribunal Electoral es una herramienta de consulta intuitiva, diseñada para facilitar el acceso a información judicial de manera rápida y eficiente.",
+      "Permite a los usuarios explorar resoluciones judiciales mediante búsquedas simples por palabra clave o búsquedas avanzadas con múltiples filtros y modificadores, garantizando resultados precisos y relevantes."
+    ]
+  },
+  {
+    "slug": "infra-te-gob",
+    "title": "Homologación de los Portales del Tribunal Electoral",
+    "descriptionCorta": "Plataforma unificada que permite acceder de forma rápida, segura y eficiente a la información judicial del Tribunal Electoral.",
+    "imageLink": "/te-gob.webp",
+    "link": "https://www.te.gob.mx",
+    "public": true,
+    "visible": true,
+    "technologies": [
+      "Apache",
+      "PHP",
+      "MySQL",
+      "Docker",
+      "Linux",
+      "Ubuntu",
+      "Git"
+    ],
+    "category": "Infraestructura",
+    "descripcion": [
+      "Diseñé e implementé la homologación e integración de los servidores web institucionales en una infraestructura centralizada, garantizando mayor estabilidad, escalabilidad y seguridad en la gestión de los portales del Tribunal Electoral.",
+      "Implementé redundancia en la infraestructura mediante la configuración de tres servidores balanceados para asegurar alta disponibilidad y continuidad operativa.",
+      "Integré sistemas desarrollados en diferentes versiones de PHP (v5 y v7), logrando compatibilidad total sin afectar la experiencia del usuario.",
+      "Configuré un reverse proxy con Apache para integrar sitios externos y optimizar el enrutamiento del tráfico web.",
+      "Desplegué la base de datos MySQL en contenedores Docker para mejorar el rendimiento, la portabilidad y la disponibilidad del sistema.",
+      "Colaboré con los equipos de infraestructura y administrativos para garantizar una migración segura y transparente, sin interrupciones del servicio."
+    ]
+  },   
+  {
+    "slug": "sistema-de-reporte-de-ventas",
+    "title": "Sistema de Reporte de Ventas",
+    "descriptionCorta": "Aplicación web corporativa para la generación, análisis y control de reportes de ventas en AMX.",
+    "imageLink": "/amx-logo.webp",
+    "link": null,
+    "public": false,
+    "visible": true,
+    "technologies": [
+      "PHP",
+      "JavaScript",
+      "Oracle",
+      "PL/SQL",
+      "Bootstrap",
+      "AJAX",
+      "Apache",
+      "Nginx",
+      "Linux",
+      "OpenAI",
+      "Java",
+      "Composer",
+      "Git"
+    ],
+    "category": "Aplicación Web",
+    "descripcion": [
+      "Diseñé e implementé una nueva arquitectura del sistema, alineada con los requerimientos actuales del corporativo, mejorando la mantenibilidad y escalabilidad de la aplicación.",
+      "Optimicé módulos críticos para reducir significativamente los tiempos de respuesta y mejorar la experiencia de usuario.",
+      "Participé en la migración del sistema a una infraestructura en la nube, adaptando el código para la actualización de PHP de la versión 5 a la 7.",
+      "Integré un Chat basado en OpenAI para facilitar la consulta de información de ventas a través de lenguaje natural.",
+      "Contribuí en la implementación de mejoras de seguridad para garantizar la integridad y confidencialidad de la información.",
+      "Desarrollé nuevos módulos administrativos para la gestión de procesos internos y el control de reportes a nivel corporativo."
+    ]
+  }
+  
+]

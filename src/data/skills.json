@@ -1,0 +1,30 @@
+[
+  {
+    "icon": "php.png",
+    "description": "Experiencia sólida en desarrollo backend utilizando PHP y frameworks como Laravel y CodeIgniter, construyendo aplicaciones escalables y mantenibles."
+  },
+  {
+    "icon": "sql.png",
+    "description": "Diseño y optimización de bases de datos relacionales en MySQL y Oracle, incluyendo consultas complejas, índices y procedimientos almacenados para mejorar el rendimiento."
+  },
+  {
+    "icon": "js.png",
+    "description": "Conocimientos básicos en desarrollo frontend con React y Angular (versiones menores a v12), capaces de crear componentes interactivos y mantener aplicaciones web existentes."
+  },  
+  {
+    "icon": "docker.png",
+    "description": "Creación y gestión de contenedores Docker para entornos de desarrollo, pruebas y despliegues, asegurando portabilidad y consistencia entre ambientes."
+  },
+  {
+    "icon": "apache.png",
+    "description": "Configuración y administración de servidores web Apache, optimizando el rendimiento, la seguridad y la disponibilidad de aplicaciones web."
+  },
+  {
+    "icon": "css.png",
+    "description": "Desarrollo de interfaces responsivas y estilizadas utilizando Bootstrap, con conocimientos básicos en Tailwind para crear diseños modernos y consistentes."
+  },
+  {
+    "icon": "git.png",
+    "description": "Desarrollo de interfaces responsivas y estilizadas utilizando Bootstrap, con conocimientos básicos en Tailwind para crear diseños modernos y consistentes."
+  }
+] 

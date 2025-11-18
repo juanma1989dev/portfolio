@@ -1,0 +1,13 @@
+---
+import skills from '../data/skills.json';
+import SkillCard from './SkillCard.astro';
+---
+
+<section class="py-5 md:py-5" id="skills">
+    <div class="container mx-auto px-4">
+        <h2 class="text-2xl font-bold text-center text-white mb-5">Mis Habilidades</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            {skills.map(skill => <SkillCard skill={skill} />)}
+        </div>
+    </div>
+</section>

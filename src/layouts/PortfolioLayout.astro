@@ -1,0 +1,73 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>{title}</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+        <!-- Efecto de gradiente radial -->
+		<div class="absolute top-0 left-0 w-full h-full bg-transparent -z-10 overflow-hidden">
+			<div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.2),rgba(255,255,255,0))]"></div>
+		</div>
+
+		<div class="container mx-auto px-2">
+			<Header />
+			<main class="pt-2">
+				<slot />
+			</main>
+			<Footer />
+		</div>
+	</body>
+</html>
+
+<style is:global>
+    :root {
+        --background-color: #030712;
+        --grid-color: rgba(255, 255, 255, 0.07);
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background-color: var(--background-color);
+        color: white;
+        font-family: 'Inter', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        position: relative; /* Necesario para el z-index de los pseudo-elementos */
+    }
+
+    /* Patrón de grid sutil */
+    body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-image:
+            linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
+            linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
+        background-size: 40px 40px;
+        opacity: 0.5;
+        z-index: -20;
+    }
+</style>

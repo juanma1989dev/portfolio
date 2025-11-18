@@ -1,0 +1,20 @@
+---
+import PortfolioLayout from "../layouts/PortfolioLayout.astro";
+import Hero from "../components/Hero.astro";
+import Projects from "../components/Projects.astro";
+import About from "../components/About.astro";
+import Contact from "../components/Contact.astro";
+import Experience from "../components/Experience.astro";
+import Skills from "../components/Skills.astro";
+---
+
+<PortfolioLayout title="Portafolio de Juan Manuel Guzmán - Desarrollador Web">
+    <Hero />
+    <main class="py-20 px-8" id="main-content">
+        <About />
+        <Experience />
+        <Projects />
+        <Skills />
+        <Contact />
+    </main>
+</PortfolioLayout>

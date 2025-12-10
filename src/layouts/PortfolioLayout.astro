@@ -11,6 +11,8 @@ const { title } = Astro.props;
 
 const myName = 'Juan Manuel Guzmán - Desarrollador Web'
 const titleText = title ? `${myName} | ${title}` : myName;
+
+const description = "Soy desarrollador de software con más de 9 años de experiencia creando soluciones tecnológicas que resuelven problemas reales. Me especializo en aplicaciones web robustas y escalables utilizando PHP, JavaScript y bases de datos como MySQL y Oracle."
 ---
 
 <!doctype html>
@@ -18,6 +20,7 @@ const titleText = title ? `${myName} | ${title}` : myName;
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content={description} />
 		<title>{titleText}</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

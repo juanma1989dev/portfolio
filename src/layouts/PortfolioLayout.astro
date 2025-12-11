@@ -2,7 +2,7 @@
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/global.css';
-import { WEB_DESCRIPTION, NAME_ROLE, WEBSITE_URL, ROLE } from '../data/my-data.js';
+import { WEB_DESCRIPTION, NAME_ROLE, WEBSITE_URL } from '../data/my-data.js';
 
 interface Props {
 	title?: string;
@@ -30,8 +30,8 @@ const description = WEB_DESCRIPTION;
         <meta property="og:title" content={titleText} />
         <meta property="og:description" content={description} />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://juan.hublava.com" />
-        <meta property="og:image" content="https://juan.hublava.com/og-juan-porfolio.png" />
+        <meta property="og:url" content={WEBSITE_URL} />
+        <meta property="og:image" content={`${WEBSITE_URL}/og-juan-porfolio.png`} />
         <meta property="og:locale" content="es_ES" />
 
         <meta property="og:site_name" content={NAME_ROLE} />
